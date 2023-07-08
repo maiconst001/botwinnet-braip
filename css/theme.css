@@ -1,0 +1,113 @@
+:root {
+  /* DARK */
+  --color-page-background: rgb(26, 26, 28);
+  --color-background: rgb(26, 26, 28);
+  --color-foreground: rgb(14, 15, 16);
+  --color-top-bar: rgb(26, 26, 28);
+  --color-top-bar-translucent: rgba(51, 52, 53, 0.9);
+  --color-top-bar-transparent: rgba(26, 26, 28, 0.0);
+  --color-sub-bar: rgba(26, 26, 28, 0.4);
+  --color-text: #D8D8D8;
+  --color-text-content: rgb(154, 155, 156);
+  --color-text-hint: rgb(94, 95, 96);
+  --color-text-button: #FFFFFF;
+  --color-overlay: rgba(0, 0, 0, 0.8);
+  --color-text-overlay: #FFFFFF;
+  --color-card: rgb(44, 45, 46);
+  --color-card-poster: rgb(34, 34, 36);
+  --color-card-moderator: rgb(14, 15, 16);
+  /* LIGHT */
+  --color-page-background-light: #FFFFFF;
+  --color-background-light: #FFFFFF;
+  --color-foreground-light: #FFFFFF;
+  --color-top-bar-light: #FFFFFF;
+  --color-top-bar-translucent-light: rgba(255, 255, 255, 0.9);
+  --color-top-bar-transparent-light: rgba(255, 255, 255, 0.0);
+  --color-sub-bar-light: rgba(255, 255, 255, 0.4);
+  --color-text-light: #222222;
+  --color-text-hint-light: #777;
+  --color-text-button-light: #18191A;
+  --color-overlay-light: rgba(255, 255, 255, 0.8);
+  --color-text-overlay-light: #000000;
+  --color-card-light: #CCCDCE;
+  --color-card-poster-light: #EDEEEF;
+  --color-card-moderator-light: #FFFFFF;
+  --color-painter-red: #F64D5D;
+  --color-design-blue: #58D2F9;
+  --color-blue: #0091FF;
+  --color-red: #F64D5D;
+  --color-green: #7ED321;
+  --color-orange: #F5A623;
+  --color-purple: #B05CFD;
+  --color-white: #FFF;
+  --color-clear: #00000000;
+  --corner-radius-small: 8px;
+  --corner-radius-medium: 16px;
+  --corner-radius-large: 32px;
+  --text-size-small: 10px;
+  --text-size-normal: 12px;
+  --text-size-large: 16px;
+  --text-size-title: 18px;
+  --text-size-button: 12px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif !important;
+}
+button:not(.ql-snow.ql-toolbar button), input[type=button], input[type=submit], input[type=reset] {
+  cursor: pointer; /* Pointer/hand icon */
+  border: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-transition: box-shadow .6s, -webkit-transform .2s; /* Safari */
+  transition: box-shadow .6s, transform .2s;
+}
+button:not(.ql-snow.ql-toolbar button):hover, button:not(.ql-snow.ql-toolbar button):focus, input[type=button]:hover, input[type=button]:focus, input[type=submit]:hover, input[type=submit]:focus, input[type=reset]:hover, input[type=reset]:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0px 2px 8px #000;
+  -ms-transform: scale(1.05, 1.05); /* IE 9 */
+  -webkit-transform: scale(1.05, 1.05); /* Safari */
+  transform: scale(1.05, 1.05);
+}
+a, a:hover, a:focus, a:active, a:visited a:not(.button) {
+  text-decoration: none;
+  color: inherit;
+  color: var(--color-text);
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+  border-width: 3px;
+  border-color: var(--color-blue);
+}
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
