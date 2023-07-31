@@ -967,3 +967,30 @@ swiper-slide img {
     border-width: 3px;
   }
 }
+
+
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 40px 20px;
+}
+
+details {
+  width: 100%;
+  margin-top: 10px;
+  min-height: 60px;
+  cursor: pointer;
+}
+summary {
+  background-color: white;
+  color: black;
+  padding: 20px 0px;
+}
+
+.details p {
+  padding: 20px 0px;
+}
