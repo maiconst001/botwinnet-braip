@@ -15,12 +15,15 @@ function togPlay() {
 }
 
 
-var frameY = document.querySelector('.framevideo')
+var frameY = document.querySelectorAll('.framevideo')
 
 
 setInterval(() => {
-	var clients = frameY.getBoundingClientRect()
-	let heightY =  (0.562151 * clients.width)
-	
-	frameY.style.height = heightY + 'px'
+	for (c of frameY) {
+			
+		var clients = c.getBoundingClientRect()
+		let heightY =  (0.562151 * clients.width)
+		
+		c.style.height = heightY + 'px'
+	}
 }, 100);
